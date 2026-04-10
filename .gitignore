@@ -1,0 +1,17 @@
+# Go
+/whatmask
+*.exe
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Claude Code
+.claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp

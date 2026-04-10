@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>whatmask</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>whatmask</h1>
+    <p class="subtitle">subnet calculator</p>
+    <div class="input-wrap">
+      <input
+        type="text"
+        id="input"
+        placeholder="192.168.1.0/24 or 2001:db8::/32"
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </div>
+    <p class="hint">Try: /24, 255.255.255.0, 192.168.1.0/24, or 2001:db8::1/48</p>
+    <div id="error"></div>
+    <div id="results"></div>
+    <footer>
+      <a href="https://github.com/whud/whatmask">GitHub</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
