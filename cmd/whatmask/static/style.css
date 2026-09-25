@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12vh;
+}
+
+main {
+  width: 100%;
+  max-width: 520px;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #cdd6f4;
+  margin-bottom: 0.15rem;
+}
+
+.subtitle {
+  color: #6c7086;
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  background: #313244;
+  border: 1.5px solid #45475a;
+  color: #cdd6f4;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input::placeholder {
+  color: #6c7086;
+}
+
+input:focus {
+  border-color: #89b4fa;
+  box-shadow: 0 0 0 3px rgba(137, 180, 250, 0.15);
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #6c7086;
+  margin-top: 0.5rem;
+}
+
+#error {
+  color: #f38ba8;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+#results {
+  margin-top: 1.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #313244;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #45475a;
+}
+
+th, td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+th {
+  color: #6c7086;
+  font-weight: 500;
+  width: 45%;
+}
+
+td {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  color: #89b4fa;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: #6c7086;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #89b4fa;
+}
+
+tr.muted th,
+tr.muted td {
+  opacity: 0.5;
+  font-size: 0.82rem;
+  padding-top: 0;
+}
