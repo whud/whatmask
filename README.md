@@ -218,7 +218,9 @@ go build ./cmd/whatmask/
 
 ## History
 
-This is a complete rewrite of the original [whatmask](http://www.laffeycomputer.com/whatmask.html) C command-line tool by Joe Laffey. The [Ruby rewrite](https://github.com/geezyx/whatmask) by Joe Topjian served as the starting point. This version is a single Go binary that works both as a command-line tool and as a web service.
+This is a complete rewrite of the original [whatmask](http://www.laffeycomputer.com/whatmask.html) C command-line tool by Joe Laffey. 
+
+The [Ruby rewrite](https://github.com/geezyx/whatmask) by Joe Topjian served as the starting point. This version is a single Go binary that works both as a command-line tool and as a web service.
 
 This project was built with [Claude Code](https://claude.ai/claude-code) by Anthropic.
 
