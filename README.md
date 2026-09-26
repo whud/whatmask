@@ -124,10 +124,10 @@ To host the web interface without installing Go, build and run the Docker image 
 git clone https://github.com/whud/whatmask.git
 cd whatmask
 docker build -t whatmask .
-docker run -d --name whatmask -p 8080:8080 whatmask
+docker run -d --name whatmask --restart unless-stopped -p 8080:8080 whatmask
 ```
 
-To use a different port, change the first number: `-p 3000:8080` serves on port 3000.
+`--restart unless-stopped` makes Docker start the container again after a crash or reboot, unless you stop it yourself. To use a different port, change the first number: `-p 3000:8080` serves on port 3000.
 
 To update to the latest version:
 
@@ -135,7 +135,7 @@ To update to the latest version:
 git pull
 docker build -t whatmask .
 docker stop whatmask && docker rm whatmask
-docker run -d --name whatmask -p 8080:8080 whatmask
+docker run -d --name whatmask --restart unless-stopped -p 8080:8080 whatmask
 ```
 
 ### JSON API
